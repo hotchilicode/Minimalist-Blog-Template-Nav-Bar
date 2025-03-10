@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Navbar</title>
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+            color: white;
+            font-family: "Ubuntu", serif;
+        }
+
+        /*
+        font-family: "Lora", serif;
+        font-family: "Ubuntu", serif;
+        */
+
+
+        /*==============================
+            Typography
+        ==============================*/
+
+        h1{
+            font-family: "Lora", serif;
+            font-weight: 400;
+            color: #143774;
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .subtitle{
+            font-weight: 700;
+            color: #1792d2;
+            font-size: .75rem;
+            margin: 0;
+
+        }
+
+        /*==============================
+            Layout
+        ==============================*/
+
+        .container{
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .container-nav{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width: 675px){ 
+            .container-nav{
+                flex-direction: column;
+            }
+
+            header{
+                text-align: center;
+            }
+        }
+
+
+        header{
+            background: pink;
+            padding: 2em 0;
+            background: #f8f8f8;
+            color: black;
+        }
+
+        /*==============================
+            Navigation
+        ==============================*/
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+            
+
+        nav li{
+            margin-left: 2em;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: #707070;
+            font-weight: 700;
+        }
+
+        nav a:hover, 
+        nav a:focus{
+            color: #1792d2;
+        }
+
+        .current-page{
+            border-bottom: 1px solid #707070;
+        }
+
+        .current-page:hover{
+            color: #707070;
+        }
+
+        @media screen and (max-width: 675px){
+            nav ul{
+                flex-direction: column;
+            }
+
+            nav li{
+                margin: .5em 0;
+            }
+        } 
+            
+        
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container container-nav">
+            <div class="site-title">
+                <h1>Living the social life</h1>
+                <p class="subtitle">A blog exploring minimalism in life</p>
+            </div>
+    
+            <nav>
+                <ul>
+                    <li><a href="#" class="current-page">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Recent Posts</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+    </header>
+
+
+
+    <script>
+
+
+const cities = ["Los Angeles", "San Francisco", "Tokyo", "London", "Paris"];
+
+cities[cities.length - 2] = "New York";
+
+console.log(cities);
+
+
+    </script>
+    
+</body>
+</html>
